@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" />
+    <link rel="icon" type="image/png" href="{% static "portfolio/icon.png"%}">
+    <script src="https://kit.fontawesome.com/04da29eaff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+    <title>Majid Nayeb</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="{% static "portfolio/icon.png"%}" alt="" height="35" width="35">
+      <a class="navbar-brand" href="#">Majid Nayeb</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor02"
+        aria-controls="navbarColor02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact me</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div id="showcase" class="jumbotron">
+        <h1 class="display-3 text-success">Hello</h1>
+        <p class="lead text-muted">I am Majid Nayeb <br>and <br> I am a web developer</p>
+      </div>
+
+    <div id="projects" class="container">
+        <h2>Projects</h2>
+        <hr>
+        <div class="row">
+            {% block content %}{% endblock %}
+            
+        </div>
+        <hr>
+    </div>
+    
+    <!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4 bg-dark">
+
+  <!-- Footer Elements -->
+  <div class="container">
+    <h4 class="text-center text-white" id="contact">Contact Me!</h4>
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center text-white">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://www.instagram.com/majid_nayeb98/">
+          <i class="fab fa-instagram text-white"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item ">
+        <a class="btn-floating btn-gplus mx-1" href="https://github.com/majd21">
+          <i class="fab fa-github text-white"> </i>
+        </a>
+      </li>
+    </ul>
+
+  
+  </div>
+  <div class="container">
+    <hr style="background-color: white;">
+  </div>
+  
+  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+     Majid Nayeb
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+</html>

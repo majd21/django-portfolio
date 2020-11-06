@@ -1,0 +1,20 @@
+#showcase {
+    background-image: url(showcase.jpg);
+    height: 80vh;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+body {
+    scroll-behavior: smooth !important;
+}
+
+#footer {
+    margin-bottom: 0 !important;
+}
+
+.row image {
+    height: 150px !important;
+}
+

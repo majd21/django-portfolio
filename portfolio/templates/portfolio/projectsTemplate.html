@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %} 
+{% block content %} 
+{% for project in projects %}
+<div class="col-md-4">
+  <div class="card border-primary mb-3" style="max-width: 20rem">
+    <div class="card-header"><h4 style="font-size: 20px;">{{project.title}}</h4></div>
+    <div class="card-body">
+      <img class="img-thumbnail" data-toggle="tooltip" data-placement="top" title="{{project.text}}" src="{{project.image.url}}" alt="{{project.title}} image" />
+      <small>{{project.date}}</small>
+      <!-- <p class="card-text">{{project.text}}</p> -->
+      <hr>
+      <a class="btn btn-primary btn-block" href="{{project.url}}">Link</a>
+    </div>
+  </div>
+</div>
+{% endfor %} 
+{% endblock %}
